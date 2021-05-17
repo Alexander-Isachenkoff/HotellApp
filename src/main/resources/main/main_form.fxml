@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainForm">
+    <tabs>
+        <Tab fx:id="registrationsTab" text="Журнал регистрации">
+            <fx:include fx:id="registrationsTabContent" source="registration_tab.fxml" />
+        </Tab>
+        <Tab fx:id="guestsTab" closable="false" text="Журнал гостей">
+            <fx:include fx:id="guestsTabContent" source="guests_tab.fxml" />
+        </Tab>
+        <Tab fx:id="roomsTab" text="Номерной фонд">
+            <fx:include fx:id="roomsTabContent" source="rooms_tab.fxml"/>
+        </Tab>
+        <Tab fx:id="servicesTab" text="Услуги">
+            <fx:include fx:id="servicesTabContent" source="services_tab.fxml"/>
+        </Tab>
+    </tabs>
+</TabPane>
